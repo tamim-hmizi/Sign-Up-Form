@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up-Form</title>
+    <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    
+</head>
+
+<body>
+    <div class="container">
+        <div class="background">
+            <div class="logobackground">
+                <img src="odin-lined.png" alt="odin logo">
+                <p>ODIN</p>
+            </div>
+            <p>Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West </a>on <a
+                    href="https://unsplash.com/photos/25xggax4bSA">Unsplash</a></p>
+        </div>
+        <div class="formsection">
+            <div class="text">
+                <p>This is not a real online service! Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Necessitatibus, commodi!</p>
+                <p>Sign up now to get started.</p>
+                <p>You know you want to.</p>
+            </div>
+
+            <form action="" method="post">
+                <div class="form">
+                    <p>Let's do this!</p>
+                    <div class="row">
+                        <div class="col">
+                            <label for="firstname">FIRST NAME*</label>
+                            <input type="text" id="firstname" name="firstname" minlength="3" maxlength="20"  pattern="^[A-Z]+[a-z]*$" required>
+                        </div>
+                        <div class="col">
+                            <label for="lastname">LAST NAME*</label>
+                            <input type="text" id="lastname" name="lastname" minlength="3" maxlength="20" pattern="^[A-Z]+[a-z]*$" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="email">EMAIL*</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="col">
+                            <label for="phonenumber">PHONE NUMBER</label>
+                            <input type="tel" id="phonenumber" name="phonenumber"  pattern="(\d){8}" >
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="password">PASSWORD*</label>
+                            <input class="error" type="password" id="password" name="password" minlength="8" maxlength="20" required>
+                        </div>
+                        <div class="col">
+                            <label for="confirmpassword">CONFIRM PASSWORD*</label>
+                            <input class="error" type="password" id="confirmpassword" name="confirmpassword" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="button">
+                    <button type="submit">Create Account</button>
+                    <p>Already have an account ?<a href="#"> Log in</a></p>
+                </div>
+            </form>
+
+
+        </div>
+    </div>
+</body>
+
+</html>

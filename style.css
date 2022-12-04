@@ -1,0 +1,144 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+@font-face {
+  font-family: Norse-Bold;
+  src: url(Norse-Bold.otf);
+}
+*{
+    box-sizing: border-box;
+}
+.container {
+  width: 1500px;
+  height: 850px;
+  margin-inline: auto;
+  margin-top: 2%;
+  display: flex;
+  border: transparent;
+  border-radius: 10px;
+  overflow: hidden;
+  font-family: Roboto;
+  font-size: 22px;
+}
+.background {
+  width: 500px;
+  background-image: url(halie-west-25xggax4bSA-unsplash.jpg);
+  position: relative;
+  color: white;
+}
+.logobackground {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  top: 20%;
+  font-family: Norse-Bold;
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+img {
+  width: 150px;
+  height: 150px;
+}
+.background > p {
+  position: absolute;
+  top: 90%;
+  left: 15%;
+}
+.background > p > a {
+  color: white;
+  text-decoration: none;
+}
+.background > p > a:hover {
+  color: black;
+}
+
+/* form section */
+.formsection {
+  padding-top: 3%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1%;
+  background-color: rgb(250, 250, 250);
+}
+.text {
+  font-size: 25px;
+  font-weight: bolder;
+  margin-inline: 5%;
+}
+.form > p {
+  font-size: 25px;
+  font-weight: bold;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 20px;
+  background-color: white;
+  padding-inline: 5%;
+  padding-block: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.row {
+  display: flex;
+  gap: 20px;
+}
+.col {
+  display: flex;
+  flex-direction: column;
+}
+label {
+  font-size: 12px;
+  font-style: italic;
+}
+input {
+  border: 1px solid #e5e7eb;
+  border-radius: 5px;
+  padding-inline: 10px;
+  color: rgba(0, 0, 0, 0.7);
+  width: 200px;
+  height: 40px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  font-size: 18px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+button {
+  background-color: #596d48;
+  color: white;
+  border: transparent;
+  border-radius: 5px;
+  padding-inline: 40px;
+  padding-block: 10px;
+}
+.button {
+  padding-inline: 5%;
+}
+.button > p > a {
+  font-weight: bold;
+  color: #596d48;
+  text-decoration: none;
+}
+.button > p > a:hover {
+  color: rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+}
+input:focus{
+   border: 1px solid rgba(0, 0, 255, 0.5);
+   outline: none;
+}
+.error{
+   border: 1px solid rgba(255, 0, 0, 0.5);
+   outline: none;
+}
+button:hover{
+  filter: brightness(0.9);
+  cursor: pointer;
+}
+button:active{
+   filter: brightness(0.5);
+}
