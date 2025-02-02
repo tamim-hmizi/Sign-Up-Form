@@ -3,8 +3,8 @@
   font-family: Norse-Bold;
   src: url(Norse-Bold.otf);
 }
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 .container {
   width: 1500px;
@@ -127,18 +127,18 @@ button {
   color: rgba(0, 0, 0, 0.5);
   text-decoration: none;
 }
-input:focus{
-   border: 1px solid rgba(0, 0, 255, 0.5);
-   outline: none;
+input:focus {
+  border: 1px solid rgba(0, 0, 255, 0.5);
+  outline: none;
 }
-.error{
-   border: 1px solid rgba(255, 0, 0, 0.5);
-   outline: none;
+.error {
+  border: 1px solid rgba(255, 0, 0, 0.5);
+  outline: none;
 }
-button:hover{
+button:hover {
   filter: brightness(0.9);
   cursor: pointer;
 }
-button:active{
-   filter: brightness(0.5);
+button:active {
+  filter: brightness(0.5);
 }
